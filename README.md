@@ -1,3 +1,3 @@
 ### Hi there 👋
 
-Go steal some code of me! It's free for u to use :)
+Go steal some of my code! It's free for u to use :)
