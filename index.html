@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<?php
+/*
+Template Name: Templatenaam
+*/
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octoblog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+</head>
+<body onload="get_octo_color()">
+    <div id="header">
+    <h1><i id="octo" class="fab fa-octopus-deploy"></i> <span id="pink">Octo</span> <span id="aqua">Blog</span></h1>
+</div>
+<div id="content">
+    <div class="post">
+        <h2 class="post-title">De Octopus</h2>
+        <p class="meta">Datum: 21-10-2020 | Auteur: Becker</p>
+        <p>Een Octopus is een zeedier, hij leeft in de oceaan. Ze komen voor vanaf de bodem tot aan het wateroppervlak. Octopussen zijn leuk want ze hebben veel zuignappen en daarmee bewegen ze zich voort. Ook zijn dat hun geslachtsorganen. Als je word gegrepen door een octopus word je dus aangerand.</p>
+    </div>
+	<p class="tussenocto"><i id="octo" class="fab fa-octopus-deploy"></i></p>
+    <div class="post">
+        <h2 class="post-title">Hallo wereld</h2>
+        <p class="meta">Datum: 21-10-2020 | Auteur: Tommie</p>
+        <p>Hallo mensen, deze blog is aangemaakt! Kom hier je vrije tijd verspillen aan het lezen van onze berichten!</p>
+    </div>
+</div>
+
+
+    
+<script>
+    function get_octo_color() {
+        const colors = ['#ff8282', '#6adebf'];
+        let random = Math.floor(Math.random() * colors.length);
+        document.getElementById("octo").style.color = colors[random]
+
+        let octos = document.getElementsByClassName("tussenocto")
+        Array.from(octos).forEach((element) => {
+            random = Math.floor(Math.random() * colors.length);
+            element.style.color = colors[random]
+        });
+    }
+</script>
+</body>
+</html>
